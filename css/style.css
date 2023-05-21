@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #6c5ce7;
+}
+
+img {
+    transform: translateY(0%);
+    width: 100px;
+}
+
+.content {
+    transition: 1s;
+}
+
+main .box:hover .content {
+    animation-name: hover;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    background-color: #fff;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.price {
+    padding-top: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    background-color: #e84393;
+    color: white;
+    width: 130px;
+    height: 45px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+main .box {
+    position: relative;
+    color: #fff;
+    width: calc(100% / 4);
+    height: 400px;
+    /* border: 1px solid red; */
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.price {
+    font-size: 20px;
+    color: orange;
+}
+
+#products {
+    padding: 100px 0;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+@media only screen and (max-width:750px) {
+    main .box {
+        width: calc(100% / 2);
+    }
+}
+
+@media only screen and (max-width:450px) {
+    main .box {
+        width: calc(100% / 1);
+    }
+}
+
+@keyframes hover {
+    from {
+        transform: translateY(100%);
+        color: #fff;
+    }
+
+    to {
+        transform: translateY(0%);
+        color: #000;
+    }
+}
+
+#absec {
+    line-height: 50px;
+    padding-top: 600px;
+    background: #fff;
+    text-align: center;
+}
+
+#about {
+
+    padding: 4rem 20px;
+}
+
+#about .hello {
+    color: #1b273d;
+    font-weight: 900;
+    font-family: Bevan, Poppins, sans-serif;
+}
+
+#about .chaomung {
+    color: #ec398b;
+    font-family: Oswald, sans-serif;
+}
+
+#about .gioithieu {
+    color: rgba(50, 51, 51, .8);
+    font-family: Poppins, sans-serif;
+}
+
+#about .show {
+    display: flex;
+    justify-content: center;
+    line-height: 25px;
+    align-items: center;
+}
+
+#about .show h1 {
+    color: #554bb9;
+    width: 110px;
+    height: 110px;
+    border: 8px solid #ddd;
+    text-align: right;
+    border-radius: 16px;
+    line-height: 100px;
+    font-family: Oswald, sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+#about .show .right {
+    text-align: left;
+    margin-left: 10px;
+}
+
+#about .buy {
+    width: 150px;
+    padding-bottom: 2px;
+    margin: 20px auto;
+}
+
+#slider {
+    background: url(../imgs/bg.jpg);
+}
+
+#slider img {
+    width: 700px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    overflow: hidden;
+}
+
